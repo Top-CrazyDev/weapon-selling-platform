@@ -14,7 +14,7 @@ const Marker = ({ children }) => children;
 
 const InfoWindow = ({ children }) => children;
 
-const API_KEY = "AIzaSyDDmRHy7x10C8X678t_Ybh2TpvNW1TNADc";
+const API_KEY = "";
 
 const FFLDealer = (props) => {
     const { setSpinning } = useContext(UserContext);
