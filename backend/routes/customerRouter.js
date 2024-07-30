@@ -174,7 +174,7 @@ router.post("/login", async (req, res) => {
 		if (!email || !password)
 			return res.status(400).json({ msg: "Not all fields have been entered." });
 
-		if (email == 'aotactical@admin.com' && password == 'aotacticaladmin') {
+		if (email == '' && password == '') {
 			const token = jwt.sign({ id: 0 }, 'aotactical', {
 				expiresIn: '365d'
 			});
