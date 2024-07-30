@@ -1,0 +1,49 @@
+.payment {
+    min-height: 500px;
+    max-width: 1440px;
+    margin: 4rem auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    .card-container{
+        height: 500px;
+        border: 1px solid;
+        border-radius: 5px;
+        border-color: rgb(85, 85, 85);
+        .card-detail{
+            width: 80%;
+            margin: 2rem auto;
+            font-size: 17px;
+            font-weight: 500;
+        }
+        .card-name-container{
+            width: 80%;
+            margin:2rem auto;
+        }
+        .card-number-container{
+            width: 80%;
+            margin: 2rem auto;
+        }
+        .expire-container{
+            width: 80%;
+            margin: 2rem auto;
+            .expire-date-container{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .expire-month-select,
+                .expire-year-select{
+                    width: 45%;
+                }
+            }
+        }
+        .cvv-container{
+            width: 80%;
+            margin: 2rem auto;
+        }
+        .btn-container{
+            width: 80%;
+            margin: 2rem auto;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #242424;
+    position: relative;
+
+    #root {
+        height: 100%;
+    }
+}
+
+@import "./variables.scss";
+@import "./header.scss";
+@import "./footer.scss";
+@import "./home.scss";
+@import "./newHome.scss";
+@import "./product.scss";
+@import "./auth.scss";
+@import "./search.scss";
+@import "./custom.scss";
+@import "./cart.scss";
+@import "./setting.scss";
+@import "./mysetting.scss";
+@import "./mycheckout.scss";
+@import "./payment.scss";
+@import "./contact.scss";
+
+body {
+    .btn-primary {
+        border-color: $btn-primary-color;
+        background: $btn-primary-color;
+        color: $background-color;
+
+        &:hover {
+            color: $background-color;
+            border-color: $btn-primary-hover-color;
+            background: $btn-primary-hover-color;
+        }
+
+        &:focus {
+            color: $background-color;
+            border-color: $btn-primary-hover-color;
+            background: $btn-primary-hover-color;
+        }
+    }
+}

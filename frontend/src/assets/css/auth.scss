@@ -1,0 +1,27 @@
+.auth-page {
+    max-width: 378px;
+    margin: 0 auto;
+    padding: 20px 20px 30px 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    .ant-form-item-label > label {
+        width: 125px;
+    }
+
+    .auth-btn {
+        background-color: #FFD814;
+        border-color: #FCD200;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px 0 rgba(213, 217, 217, .5);
+        color: #111;
+        text-align: center;
+        padding: 5px 0;
+
+        &:hover {
+            background: #F7CA00;
+            border-color: #F2C200;
+            cursor: pointer;
+        }
+    }
+}

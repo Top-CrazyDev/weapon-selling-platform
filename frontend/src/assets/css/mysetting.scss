@@ -1,0 +1,16 @@
+.my-setting {
+    min-height: 500px;
+    max-width: 1440px;
+    margin: 4rem auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .ant-form-item-label > label {
+        width: 125px;
+    }
+
+    .ant-input[disabled] {
+        background-color: #fbfbfb;
+        color: rgba($color: #000000, $alpha: 0.75);
+    }
+}

@@ -1,0 +1,48 @@
+.ant-modal-confirm-btns {
+    display: none;
+}
+
+.ffl-dealer {
+    .dealer-list {
+        max-height: 700px;
+        overflow-y: auto;
+    }
+
+    div {
+        cursor: pointer;
+    }
+
+    margin-bottom: 2rem;
+}
+
+.dealer-list {
+    div {
+        &:hover {
+            background-color: #efefef;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .ffl-dealer {
+        div {
+            div {
+                display: block !important;
+
+                div {
+                    width: 100% !important;
+                }
+
+                input {
+                    width: 100% !important;
+                    margin-top: 0.5rem;
+                }
+
+                button {
+                    width: 100% !important;
+                    margin-top: 0.5rem;
+                }
+            }
+        }
+    }
+}

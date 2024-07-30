@@ -1,0 +1,38 @@
+.my-checkout {
+    min-height: 500px;
+    max-width: 1440px;
+    margin: 4rem auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .ant-form-item-label > label {
+        width: 125px;
+    }
+
+    .addresses {
+        border: 1px solid #ccc;
+
+        .billing-address {
+            padding: 20px;
+        }
+
+        .shipping-address {
+            margin-top: 20px;
+        }
+    }
+
+    .verify-age {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .notification {
+        background-color: #f2dede;
+        border-color: #ebccd1;
+        color: #a94442;
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+    }
+}

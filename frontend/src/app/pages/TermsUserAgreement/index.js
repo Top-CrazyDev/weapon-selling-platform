@@ -1,0 +1,139 @@
+import React, { useEffect, useContext } from "react";
+import apis from "../../api";
+import UserContext from "../../utils/UserContext";
+
+const TermsOfUseAgreement = () => {
+    const { customerId } = useContext(UserContext);
+
+    // page log
+    useEffect(() => {
+        const pageLog = async () => {
+            await apis.addPageLog({
+                customerId,
+                page: '/term-agreement'
+            })
+        }
+
+        pageLog()
+    }, [customerId])
+
+    return <div className="terms-page">
+        <div>
+            <h1>WEBSITE TERMS OF USE AGREEMENT</h1>
+            <h2>TERMS OF USE AGREEMENT AND DISCLAIMER OF LIABILITY (THE “AGREEMENT”)</h2>
+            <p>EFFECTIVE: July 5, 2024</p>
+            <br />
+            <p>PLEASE READ THIS AGREEMENT CAREFULLY. By accessing the Services (defined below), you agree to be bound by the terms and conditions set forth below. These terms and conditions are subject to change without notice. These terms and conditions constitute the entire agreement between you and AO Tactical LLC. (defined below), and govern your use of the Services, superseding any prior agreements between you and AO Tactical LLC., relating to your use of the Services. IF YOU DO NOT AGREE TO TERMS AND CONDITIONS OF THIS AGREEMENT, DO NOT ACCESS THE SERVICES.</p>
+            <p>Welcome to aotactical.com. AO Tactical LLC. and its subsidiaries and corporate affiliates ("we", "us", “our”, or " AO Tactical LLC.") provide the information, data, documents, prices, applications, text, images, graphics, video, audio, and all other content (collectively “Content”) contained on aotactical.com and all other subsidiary or affiliate websites and pages, as well as in any online applications; mobile applications; e-mail; telephone communications; sweepstakes, contest and rebate submissions; product and warranty registrations; newsletters; forums; posts; comments; surveys; and the like that AO Tactical LLC. owns, maintains, operates, or disseminates; and the websites and applications owned, maintained and/or operated by our third-party contractors or service providers (collectively, the “Services”) for informational purposes only. By accessing the Services, you, and any parties on whose behalf or for whose benefit you access, view, or otherwise use (collectively “use”) the Services, (collectively, "you" or "User"), agree to be legally bound by and comply with the terms and conditions contained within this Terms of Use Agreement and Disclaimer of Liability (the "Agreement"). This Agreement governs the use of the Services including all Content contained therein and limits the liability of AO Tactical LLC. resulting from any use of such Content.</p>
+            <p>In addition, please review our Privacy Notice and Policy, which explains AO Tactical LLC.’s collection and use of Personally Identifiable Information.</p>
+        </div>
+
+        <div>
+            <h2>1. ACCEPTANCE.</h2>
+            <p>Accessing or otherwise using the Services constitutes your acceptance of the terms and conditions of this Agreement and our Privacy Notice and Policy. You represent and warrant that you have the legal authority to accept this Agreement on behalf of yourself and any parties on whose behalf or for whose benefit you access or otherwise use the Services. The Services are not intended to be used by children under 16 years of age. No information should be submitted to or posted to the Services by Users under 16 years of age.</p>
+        </div>    
+
+        <div>
+            <h2>2. PERMISSION TO USE; LIMITATIONS; TERMINATION.</h2>
+            <p>AO Tactical LLC. hereby grants User a limited, non-exclusive and revocable permission to use the Services subject to the terms and conditions of this Agreement. Use of certain pages, sections, portions, or components (collectively “Pages”) of the Services may be subject to additional terms relating to privacy of personal information or other matters as may be provided in a separate warning, notice, policy, or agreement (collectively “agreements”). All such additional agreements are hereby incorporated into this Agreement. To the extent that such additional agreements provide for additional restrictions on your use of the Services or additional limitations of liability, such restrictions or additional limitations of liability shall be in addition to those provided under this Agreement. Your access to certain content or Pages may be restricted in which event use of such content or Pages is prohibited unless specific permission to access such content or Pages is explicitly granted by AO Tactical LLC. The Services may be used only for personal non-commercial informational purposes only, and you may not use the Services for any purpose that is unlawful or prohibited by this Agreement. You may not use the Services in any manner which could damage, disable, overburden, or impair the Services or interfere with any other person’s use and enjoyment of the Services. The Services are intended to be used by residents of the United States, its territories, possessions and protectorates, and residents of Canada only. You agree to be bound by and to comply with this Agreement as it may be modified from time to time as set forth in this Agreement. You also agree to be bound by and to comply with all applicable government laws and regulations pertaining to your use of the Services and its contents. AO Tactical LLC. may cancel your permission to use all or any part of the Services at any time for any reason in the sole discretion of AO Tactical LLC. Your permission to use the Services shall automatically terminate in the event that you violate this Agreement. All provisions of this Agreement other than the permission to use the Services shall survive termination.</p>
+        </div>
+
+        <div>
+            <h2>3. THIRD-PARTY WEBSITES/VENDORS.</h2>
+            <p>The Services may contain advertisements for third-parties, information about third-parties, links to third-party websites or social media platforms, and/or information or content provided by third-parties. The owners and affiliates of such providers are referred to in this Agreement as "Third-Party Vendors." Such advertisements, information, content, and links do not and shall not be construed as approval or endorsement of such Third-Party Vendors or their websites or social media platforms or pages by AO Tactical LLC. AO Tactical LLC. makes no representation concerning the lack of any viruses or other harmful components on any Third-Party Vendor website or social media platform or pages to which our Services link, and AO Tactical LLC. shall have no liability resulting from your use of any such Third-Party Vendor website or social media platform or pages. If you choose to contact, visit the websites, social media platforms, or pages, or transact business with Third-Party Vendors, you do so at your own risk, and your use of their websites, social medial platforms, or pages is subject to any applicable rules and policies of such Third-Party Vendors, including any applicable terms of use agreements or privacy policies of such Third-Party Vendors. Third-Party Vendors have no authority to act on our behalf or to bind us, and we are not responsible for the actions of Third-Party Vendors. You shall be responsible for taking such steps, as you deem appropriate to evaluate Third-Party Vendors and their services and products and otherwise protect your interests. AO Tactical LLC. is not and shall not be construed to be a party to any transactions that may be entered into between you and Third-Party Vendors.</p>
+        </div>   
+
+        <div>
+            <h2>4. USER POSTINGS: USER INPUT.</h2>
+            <p>The Services may, from time to time, provide a bulletin board service, chat areas, news groups, forums, communities, personal pages, calendars, or other message or social media services as a convenience for Users. AO Tactical LLC. assumes no obligation to monitor the contents on the Services but reserves the right to refuse to accept and to remove any posting at any time. You agree not to post any information, content, or materials that violate intellectual property laws, that are obscene, pornographic, defamatory, violent, harassing, or that otherwise violate applicable laws or community standards, that solicit or promote any illegal activity, or that do not pertain to the specific subject matter of the social medium, all as determined by AO Tactical LLC. in its sole and absolute discretion.</p>
+
+            <p>You acknowledge and agree that by providing you with the ability to view and distribute User generated content on any social medium, AO Tactical LLC. is merely acting as a passive conduit for such distribution and is not undertaking any obligation or liability relating to any content or activity on the social medium. AO Tactical LLC. reserves the right to block or remove communications or materials that it determines, in its sole discretion, to be (a) abusive, harassing, threatening, violent, defamatory, pornographic, or obscene; (b) fraudulent, deceptive, or misleading; (c) in violation of a copyright, trademark, or other intellectual property right of another; (d) in violation of any law or regulation; (e) advertisements or offers to sell or buy any goods or services; (f) surveys, contests, pyramid schemes, or chain letters; (g) viruses, corrupted files, spyware, harvesters, or any software, application, or program that is intended to spy upon or damage the operation of a computer or collect information about others; (h) offensive or otherwise unacceptable to AO Tactical LLC. in its sole and absolute discretion.</p>
+
+            <p>You acknowledge that any information and materials posted on the Services are subject to use by AO Tactical LLC. free of charge in connection with operating the Services and promoting our business without further notification to or permission by you. By posting information and/or materials to the Services or otherwise providing them to AO Tactical LLC., you: (i) grant AO Tactical LLC. a world-wide, perpetual, irrevocable, transferable, sub-licensable, royalty-free, non-exclusive, and unrestricted license to copy, reproduce, adapt, transmit, edit, modify, or otherwise use, publicly display, distribute, translate and create compilations and derivative works from, any and all such information and materials (in any format or media); and (ii) waive all moral rights in and to all such information and materials in favor of AO Tactical LLC.. By posting any information and/or materials to the Services or otherwise providing them to AO Tactical LLC., you represent and warrant that such information and materials: 1) are original to you and that you have obtained all necessary rights in and to such information and materials to post, upload, or otherwise submit it; 2) does not violate any law; and 3) complies with this Agreement.</p>
+
+            <p>In the event you believe that the Services contain any unlawful or inappropriate information or materials, you should notify AO Tactical LLC. at the following address: AO Tactical LLC. 7811 W Sinclair Street West Baden Springs, IN 47469, or by emailing us at swlegal@aotactical.com. Users under the age of majority in their jurisdiction of residence should not access or make any postings on the Services without parental permission and by making such postings represent that they have obtained such permission. AO Tactical LLC. assumes no obligation to investigate the existence of parental permission for access to or use of the Services. AO Tactical LLC. may establish additional or different policies and guidelines from time to time regarding posting information on the Services. All electronic mail or communications provided to AO Tactical LLC. may be used by AO Tactical LLC. for any purpose without compensation to the contributor, subject to AO Tactical LLC.’s then existing privacy policy. You agree that no joint venture, partnership, employment, or agency relationship exists between you and AO Tactical LLC. as a result of this Agreement or use of the Services. You represent that any information that you provide using the Services shall be true.</p>
+        </div>
+
+        <div>
+            <h2>5. SECURITY; PRIVACY.</h2>
+            <p>AO Tactical LLC. strives to maintain the security of information provided in connection with the Services but cannot guarantee the security of any such information, and to the maximum extent permitted by law, AO Tactical LLC. shall not be responsible for any disclosure or compromise of User information. Further, you are responsible for maintaining the security of any passwords or other access keys provided to or selected by you for any restricted pages of the Services. We have no obligation to store or maintain any information provided by or on behalf of you. Any personal information we collect will be subject to our Privacy Notice and Policy as may be modified from time to time. For information about AO Tactical LLC.’s privacy policy and practices, please see AO Tactical LLC.’s Privacy Notice and Policy located on aotactical.com.</p>
+        </div>
+
+        <div>
+            <h2>6. CHANGES TO THE SERVICES; LIMITATION OF AVAILABILITY.</h2>
+            <p>At any time and for any reason in our sole discretion, we may modify or discontinue any aspect or feature of the Services, including content, pages, social media, functionality, hours of availability, pricing, registration requirements, the domain name addresses through which the Services are accessible, or the equipment needed for the use of the Services. The availability of the Services are subject to periodic downtime for maintenance and repairs and are subject to interruption due to causes beyond our reasonable control, including computer viruses, failure of telecommunication links, or failure of Internet infrastructure. You acknowledge and agree that we shall not be responsible for any interruptions of the availability of the Services.</p>
+        </div>
+
+        <div>
+            <h2>7. EXCLUSIVE USER REMEDY; TYPOGRAPHICAL ERRORS.</h2>
+            <p>In the event that you are dissatisfied with any aspect of the Services, your sole remedy shall be to discontinue use of the Services. The content of the Services may contain errors, omissions or typographical errors. AO Tactical LLC. shall not be liable for any such errors. In the event that a product, service, or price is listed incorrectly due to an inaccuracy, typographical error, or error in pricing information, AO Tactical LLC. shall not be liable to you for any claim whatsoever arising from the inaccuracy and shall have the right to refuse or cancel any orders placed for product or service(s) listed at the incorrect price. If your credit card has already been charged for the purchase and your order is canceled, AO Tactical LLC. shall issue a credit to your credit card account in the amount of the incorrect price.  The websites of the subsidiaries and corporate affiliates of AO Tactical LLC. may also contain additional terms and conditions that apply to the products or services offered through those websites.</p>
+        </div>
+
+        <div>
+            <h2>8. DISCLAIMER OF WARRANTIES.</h2>
+            <p>Although we strive to provide high-quality content on the Services, we do not guarantee or warrant the accuracy, completeness, suitability, availability, or timeliness of anything posted on the Services. Prices and availability of products are subject to change without notice. The Services should not be relied upon for personal, medical, legal, or financial information or decisions, and you should consult an appropriate professional for specific advice tailored to your situation. THE SERVICES ARE PROVIDED "AS-IS" AND “AS AVAILABLE”. WITH ALL FAULTS, AND AO Tactical LLC. DISCLAIMS TO THE MAXIMUM EXTENT PERMITTED BY LAW ALL WARRANTIES RELATING TO THE SERVICES, WHETHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR TITLE, WARRANTIES AGAINST INFRINGEMENT OR INTERFERENCE WITH ENJOYMENT, OR WARRANTIES ARISING FROM COURSE OF DEALING OR USAGE OF TRADE. BY WAY OF ILLUSTRATION WITHOUT LIMITATION, AO Tactical LLC. DOES NOT WARRANT THAT THE SERVICES WILL FULFILL ANY USER'S PARTICULAR REQUIREMENTS, THAT ACCESS TO THE SERVICES WILL BE UNINTERRUPTED OR ERROR FREE OR THAT ANY INFORMATION OBTAINED THROUGH THE SERVICES IS ACCURATE. AO Tactical LLC. DOES NOT MAKE ANY WARRANTY REGARDING INFORMATION OBTAINED FROM ANY HYPERLINKED THIRD-PARTY VENDOR.</p>
+            <p>COMMENTS OR OPINIONS EXPRESSED ON THE SERVICES ARE THOSE OF THE RESPECTIVE USERS ONLY. THE VIEWS EXPRESSED ON THE SERVICES AND IN USER CONTENT DO NOT NECESSARILY REPRESENT OR REFLECT THE VIEWS OF AO Tactical LLC. AO Tactical LLC. IS NOT RESPONSIBLE FOR, AND DISCLAIMS ALL LIABILITY IN RELATION TO, THE USER CONTENT POSTED, UPLOADED OR OTHERWISE SUBMITTED TO OR THROUGH THE SERVICES.</p>
+            <p>ANY PRODUCTS AND/OR SERVICES DESCRIBED ON THE SERVICES ARE OFFERED IN JURISDICTIONS WHERE THEY MAY BE LEGALLY OFFERED. THE INFORMATION ON THE SERIVCES IS NOT AN OFFER OR SOLICITATION BY ANYONE IN ANYONE IN ANY JURISDICTION IN WHICH AN OFFER OR SOLICITATION CANNOT LEGALLY BE MADE, OR TO ANY PERSON TO WHOM IT IS UNLAWFUL TO MAKE A SOLICITATION.</p>
+        </div>
+
+        <div>
+            <h2>9. DISCLAIMER OF LIABILITY.</h2>
+            <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, NEITHER AO Tactical LLC. NOR ANY OF ITS SUBSIDIARIES, AFFILIATES, LICENSORS, PARTNERS, MANAGERS, SHAREHOLDERS, DIRECTORS, OFFICERS, EMPLOYEES OR OTHER AGENTS SHALL HAVE ANY RESPONSIBILITY OR LIABILITY TO ANY USER OR ITS PRINCIPALS OR AGENTS FOR ANY DAMAGES, WHETHER GENERAL, SPECIAL, DIRECT, INDIRECT, INCIDENTAL OR CONSEQUENTIAL, INCLUDING ANY LOST PROFITS OR LOST SAVINGS, WHETHER OR NOT FORESEEABLE AND WHETHER BASED ON CONTRACT, TORT, COMMON LAW OR ANY OTHER THEORY OF LIABILITY, STATUTE OR REGULATION. USER EXPRESSLY ACKNOWLEDGES AND AGREES THAT AO Tactical LLC. IS PROVIDING ACCESS TO THE SERVICES IN RELIANCE ON THE DISCLAIMERS AND LIMITATIONS SET FORTH IN THIS AGREEMENT, AND FURTHER ACKNOWLEDGES AND AGREES THAT SUCH LIMITATIONS ARE REASONABLE. IN NO EVENT SHALL AO Tactical LLC.'S LIABILITY TO USER EXCEED THE FEES ACTUALLY PAID BY USER FOR USE OF THE SERVICES.</p>
+        </div>
+
+        <div>
+            <h2>10. PROPRIETARY RIGHTS; RESTRICTIONS.</h2>
+            <p>You acknowledge and agree that the Services’ content, design, code, underlying technology and related items are proprietary to AO Tactical LLC. (or our licensors and vendors if applicable) and protected by U.S., Canadian, and international copyright laws, trade secret laws, trademark laws and other laws. The posting of content on the Services by AO Tactical LLC. or our subsidiaries and affiliates does not constitute a waiver of any right in such content. This Agreement does not provide you with any right or interest in our proprietary rights related to the Services or otherwise, and all such rights shall continue to be owned by AO Tactical LLC. (or our licensors or vendors if applicable). Except to the extent express written permission is given to you by AO Tactical LLC., you shall not copy, reproduce or otherwise duplicate the Services or their content, in whole or in part, or access or attempt to access any of our systems, programs, data, code, underlying technology, or content that is not made available for public use, or use any content on the Services other than for their intended purpose. Permission is hereby given to you to view, print or download information on the Services that is made available by AO Tactical LLC. for public viewing, printing or downloading, for your own personal, non-commercial, informational use and not for republication, distribution, sale, transfer, preparation of derivative works or other use. Placing links to our websites on other sites is prohibited absent AO Tactical LLC.’s permission. Data mining, harvesting or similar collection of email addresses or other information on the Services is prohibited. The trademarks appearing on the Services are trademarks of AO Tactical LLC. or others and may not be used without the express written permission of AO Tactical LLC. or their respective owners. If you believe that any content or other aspects of the Services infringe upon your rights or the rights of others, you should provide notice to us at the following address: AO Tactical LLC. 7811 W Sinclair Street West Baden Springs, IN 47469, in which event we may elect to investigate the matter further.</p>
+        </div>
+
+        <div>
+            <h2>11. CHOICE OF LAW AND FORUM; ATTORNEYS' FEES; INDEMNIFICATION.</h2>
+            <p>For Users who are not an individual resident in the province of Quebec, this Agreement shall be governed exclusively by its terms and by the laws of the United States and the Commonwealth of Massachusetts as applied to contracts entered into in Massachusetts between Massachusetts residents without regard to the state's rules concerning choice of law. You hereby expressly consent and agree to exclusive jurisdiction and venue in Hampden County, Massachusetts with respect to any litigation arising out of or relating to this Agreement, provided that we may bring an action to enforce our rights in any forum having jurisdiction. In the event we are required to incur any attorneys’ fees, costs or other expenses in connection with enforcing or defending our rights under this Agreement, you shall reimburse us for such attorneys' fees, costs and expenses. User agrees to indemnify AO Tactical LLC. against any and all claims, actions, costs and expenses, including attorneys' fees, arising from the User's use of the Services or breach of this Agreement.</p>
+        </div>
+
+        <div>
+            <h2>12. OTHER PROVISIONS.</h2>
+            <p>In the event that any provision of this Agreement is held to be invalid or unenforceable, the remainder of this Agreement shall continue in full force and effect, and the provision held to be invalid or unenforceable shall be automatically amended to most closely approximate the original provision on terms that are valid and enforceable and the court or other adjudicating authority holding such provision invalid or unenforceable shall make such amendment accordingly. This Agreement shall control over any conflicting documents or information, including information on the Services. We may modify the terms of this Agreement from time to time by posting changes to this Agreement on aotactical.com. No provision of this Agreement may be amended, modified or waived except as provided in the foregoing sentence. You agree to review this Agreement from time to time and comply with any changes. Any use of the Services after our posting of any such changes shall constitute your acceptance of this Agreement as modified. The terms of this Agreement constitute the mutual agreement of the parties and shall be construed neutrally and not for or against either party. Any rights not expressly granted to User in this Agreement are reserved by AO Tactical LLC.</p>
+        </div>
+
+        <div>
+            <h2>13. ADDITIONAL MOBILE SERVICE PROVISIONS.</h2>
+            <p>AO Tactical LLC. offers its customers mobile alerts regarding sale promotions, event information, product launch announcements, cart reminders, back in stock alerts, price drop alerts, low inventory alerts by SMS message (the "Mobile Service") on 39123. By participating in the Mobile Service, in addition to this Agreement taken together as a whole, you are specifically agreeing to these Additional Mobile Service Provisions (together the “Terms”).</p>
+            <p>Signing Up and Opting-In to the Mobile Service </p>
+            <p>Enrollment in the Mobile Service requires you to provide your mobile phone number and to agree to these Terms. You may not enroll if you are under eighteen (18) years old. Before the Mobile Service starts, you will need to agree to these Terms. AO Tactical reserve the right to stop offering the Mobile Service at any time with or without notice. </p>
+            <p>By opting into the Mobile Service, you: </p>
+            <p>Authorize AO Tactical to use auto dialer or non-auto dialed technology to send recurring text messages to the mobile phone number associated with your opt-in (i.e., the number listed on the opt-in form or, if none, the number from which you send the opt-in, or, if none, the number on file for the account associated with your opt-in); </p>
+            <p>Acknowledge that you do not have to agree to receive messages as a condition of purchase; </p>
+            <p>Confirm that you are the subscriber to the relevant phone number or that you are the customary user of that number on a family or business plan and that you are authorized to opt in; and </p>
+
+            <p>Consent to the use of an electronic record to document your opt-in. To request a free paper or email copy of the opt-in or to update our records with your contact information, please contact website@aotactical.com. To view and retain an electronic copy of these Terms or the rest of your opt-in, you will need (i) a device (such as a computer or mobile phone) with Internet access, and (ii) and either a printer or storage space on such device. For an email copy, you'll also need an email account you can access from the device, along with a browser or other software that can display the emails. </p>
+
+            <p>Content You May Receive </p>
+
+            <p>Once you affirm your choice to opt-in to the Mobile Service on 39123, your message frequency may vary. You may receive alerts about:</p>
+
+            <ul>
+                <li>Sale promotions</li>
+                <li>Event information</li>
+                <li>Product launch announcements</li>
+                <li>Cart reminders</li>
+                <li>Back in stock alerts</li>
+                <li>Price drop alerts</li>
+                <li>Low inventory alerts</li>
+            </ul>
+
+            <p>Charges and Carriers</p>
+            <p>Message and data rates may apply. Please consult your service agreement with your wireless carrier or contact your wireless carrier to determine your phone's pricing plan and the charges for sending and receiving text messages. You acknowledge that you are responsible for any message, data or other charges incurred (usage, subscription, etc.) as a result of using the Mobile Service. </p>
+
+            <p>Supported carriers are T-Mobile, Verizon Wireless, Sprint, Boost, Virgin Mobile, U.S. Cellular, Cricket, Alltel, Cincinnati Bell, Cellcom, C-Spire, nTelos, MetroPCS, AT&T, and other smaller regional carriers. The Mobile Service may not be available on all wireless carriers. AO Tactical may add or remove any wireless carrier from the Mobile Service at any time without notice. AO Tactical and mobile carriers are not responsible for any undue delays, failure of delivery, or errors in messages. </p>
+
+            {/* <p>To Stop the Mobile Service </p>
+            <p>To stop receiving text messages from AO Tactical, text the word STOP to 39123 any time or reply STOP to any of the text messages you have received from AO Tactical. After texting STOP to 39123, you will receive one additional message confirming that your request has been processed.</p> */}
+
+            <p> Questions </p>
+            <p>This will provide you with customer service email address (website@aotactical.com). You can also contact us at AO Tactical Brands, Inc., 7811 W Sinclair Street West Baden Springs, IN 47469: Customer Support.</p>
+        </div>
+    </div>
+}
+
+export default TermsOfUseAgreement;
