@@ -334,7 +334,7 @@ router.post("/getFflDealers", async (req, res) => {
 		"data": req.body
 	}, {
 		headers: {
-			"x-api-key": "YRvEyLpSgm6K0aPjPN3uI8nzbjyaaPHDaaQhSJpr"
+			"x-api-key": ""
 		}
 	})
 		.then(response => {
